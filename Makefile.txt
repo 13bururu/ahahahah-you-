@@ -1,6 +1,6 @@
-all: database
-database: database.o main.o
-	g++ -o database database.o main.o
+all: db
+db: database.o main.o
+	g++ -o db database.o main.o
 
 clean:
-	rm -f database.o main.o database
+	rm -f database.o main.o db
